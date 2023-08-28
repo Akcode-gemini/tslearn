@@ -6,3 +6,7 @@ enum SeatChoice{
     FOURTH=5//if you initialize with a string then you need to initialize each line
 }//It generates IIFE but on using const enum it doesn't produce more code
 const seat=SeatChoice.AISLE
+enum Size{Small=1,Medium,Large};
+let mySize:Size=Size.Medium;
+console.log(mySize);
+//using enum we can represent the list of related constants.

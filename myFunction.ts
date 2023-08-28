@@ -49,5 +49,11 @@ function fn(x:string|number){
         x // has never type
     }
 }
-
+//Js returns undefined if there is no else
+function calculateTax(income:number):number{
+    if (income<50000){
+        return income*1.2
+    }//noImplicitreturns 
+    return income*2
+}
 export{}

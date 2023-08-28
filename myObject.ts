@@ -5,12 +5,14 @@ const User={
 }
 
 //Use of Objects in Function
-function createUser({name:string,isPaid:boolean}){}
+function createUser({name,isPaid}:{name:string;isPaid:boolean}){
+    console.log(name,isPaid)
+}
     //to pass much more information apart from function definition like passing one more argument to the function without defining it in the parametera
     let newUser={name:"aaliya",isPaid:false,email:"aa@g.com"}
 
 
-//createUser({name:"aaliya",isPaid:false})
+createUser({name:"aaliya",isPaid:false})
 createUser(newUser)
 
 
@@ -58,5 +60,10 @@ type cardDate={
 type cardDetails=cardNumber & cardDate &{
     cvv:number
 }
+//objects are dynamic in Js
+let employee:{
+    id:number,
+    name:string
+}={id:1,name:"aaliya"}
 
 export{}
